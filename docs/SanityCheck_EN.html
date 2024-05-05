@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+  <!-- This file was converted to HTML by Writer2xhtml ver. 1.7 beta. See http://writer2xhtml.sourceforge.net for more info. --><head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>LibreOffice Guides 24.2 - SanityCheck 1.0.1</title>
+    <meta charset="UTF-8">
+    <meta content="LibreOffice Guides 24.2
+      Contibutor: The LibreOffice Documentation Team
+      Publisher: The Document Foundation" name="description">
+    <meta content="" name="keywords">
+    <link href="http://purl.org/dc/elements/1.1/" rel="schema.DC">
+    <meta content="LibreOffice Guides 24.2 - SanityCheck 1.0.1"
+      name="DC.title">
+    <meta content="LibreOffice - LibreOffice Guides 24.2"
+      name="DC.subject">
+    <meta content="LibreOffice Guides 24.2
+      Contibutor: The LibreOffice Documentation Team
+      Publisher: The Document Foundation" name="DC.description">
+    <meta content="B. Antonio Fernández" name="DC.creator">
+    <meta content="2024-05-05T21:55:35.189000000" name="DC.date">
+    <meta content="en" name="DC.language">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body dir="ltr">
+    <div id="SECLOGOregion" style="margin-left:0;margin-right:0">
+      <p class="NewChapter" style="page-break-before:always"><img
+          alt="LibreOffice Logo" class="frameGraphics"
+          id="LibreOfficeLogographic"
+          src="images/SanityCheck_EN-img001.png"
+style="margin-top:5.90315rem;margin-bottom:0;width:30.708662rem;height:7.866142rem"></p>
+      <table id="Table2table"
+style="background-color:transparent;margin-top:0.23858269rem;margin-bottom:0;margin-left:auto;margin-right:auto;border-collapse:collapse">
+        <colgroup> <col style="width:9.479527rem"> <col
+            style="width:12.240946rem"> <col style="width:8.6503935rem">
+        </colgroup> <tbody>
+          <tr style="background-color:transparent">
+            <td
+style="border:none;padding:0;background-color:#cccccc;vertical-align:top">
+              <p class="Heading4" style="text-align:center">English</p>
+            </td>
+            <td style="border:none;padding:0;vertical-align:top">
+              <p class="Heading4" style="text-align:center"><a
+                  moz-do-not-send="true" href="SanityCheck_ES.html">Español</a></p>
+            </td>
+            <td style="border:none;padding:0;vertical-align:top">
+              <p class="Heading4" style="text-align:center"><a
+                  moz-do-not-send="true" href="SanityCheck_PT.html">Português</a></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="SECTITLEregion">
+      <p class="Title"><a id="RefHeadingToc40844220585692"></a>SanityCheck
+        1.0.1</p>
+    </div>
+    <p class="Subtitle">Macros to unify the format and styles of
+      LibreOffice guides.</p>
+    <section id="TableofContents2">
+      <h1 class="ContentsHeading">Contents</h1>
+      <ul style="list-style-type:none;margin:0;padding:0">
+        <li>
+          <p class="Contents1"><span class="SectionNumber"></span><a
+              href="#toc0">Copyright</a></p>
+        </li>
+        <li>
+          <p class="Contents1"><span class="SectionNumber"></span><a
+              href="#toc1">Introduction</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc2">Installation and features</a></p>
+        </li>
+        <li>
+          <p class="Contents1"><span class="SectionNumber"></span><a
+              href="#toc3">Macros Description</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc4">Toggle highlights</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc5">Document fields</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc6">Rename Objects</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc7">Check styles</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc8">Direct Format Cleanup</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc9">Review of tables</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc10">Figures adjust</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc11">Browse Images</a></p>
+        </li>
+        <li>
+          <p class="Contents1"><span class="SectionNumber"></span><a
+              href="#toc12">Limitations, known issues and tips</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc13">Templates</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc14">Fields</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc15">Styles</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc16">Cleaning direct formatting of Paragraphs</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc17">Cleaning direct format of Numbers (ordered
+              lists)</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc18">Tables</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc19">Images</a></p>
+        </li>
+        <li>
+          <p class="Contents2"><span class="SectionNumber"></span><a
+              href="#toc20">captions of the figures</a></p>
+        </li>
+        <li>
+          <p class="Contents1"><span class="SectionNumber"></span><a
+              href="#toc21">About the translation</a></p>
+        </li>
+      </ul>
+    </section>
+    <h1 id="toc0"><a id="RefHeadingToc719488499079"></a>Copyright</h1>
+    <p class="Textbody"><span style="font-family:'Liberation
+        Sans',sans-serif">This document is copyright © 2024 by the
+        LibreOffice Documentation Team. Contributors are listed below.
+        It may be distributed and modified under the terms of the </span><a
+        class="Internet20link"
+        href="http://www.gnu.org/licenses/gpl.html"><span
+          style="font-family:'Liberation
+          Sans',sans-serif;color:#000080;text-decoration:none">GNU
+          General Public License</span></a><span
+        style="font-family:'Liberation Sans',sans-serif"> version 3 or
+        later or the </span><a class="Internet20link"
+        href="http://creativecommons.org/licenses/by/4.0/"><span
+          style="font-family:'Liberation
+          Sans',sans-serif;color:#000080;text-decoration:none">Creative
+          Commons Attribution License</span></a><span
+        style="font-family:'Liberation Sans',sans-serif">,version 4.0 or
+        later.</span></p>
+    <p class="Textbody">All trademarks mentioned in this guide belong to
+      their rightful owners.</p>
+    <table id="Table1table"
+style="margin-top:0;margin-bottom:0;margin-left:auto;margin-right:auto;border-collapse:collapse">
+      <colgroup> <col style="width:19.724411rem"> <col
+          style="width:19.724411rem"> </colgroup> <tbody>
+        <tr>
+          <td style="border-top:1px solid #000000;border-bottom:1px
+            solid
+#000000;border-left:none;border-right:none;padding-top:0.23858269rem;padding-bottom:0;padding-left:0;padding-right:0;background-color:#e6e6e6;vertical-align:middle">
+            <p class="DefinitionTerm">Author</p>
+          </td>
+          <td style="border-top:1px solid #000000;border-bottom:1px
+            solid
+#000000;border-left:none;border-right:none;padding-top:0.23858269rem;padding-bottom:0;padding-left:0;padding-right:0;background-color:#e6e6e6;vertical-align:middle">
+            <p class="DefinitionTerm"><span
+                style="font-family:'Liberation Sans',sans-serif">Contributors</span></p>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-top:none;border-bottom:1px solid
+#000000;border-left:none;border-right:none;padding-top:0.23858269rem;padding-bottom:0;padding-left:0;padding-right:0;background-color:#ffffff;vertical-align:middle">
+            <p class="Textbody">B.Antonio Fernández</p>
+          </td>
+          <td style="border-top:none;border-bottom:1px solid
+#000000;border-left:none;border-right:none;padding-top:0.23858269rem;padding-bottom:0;padding-left:0;padding-right:0;background-color:#ffffff;vertical-align:middle">
+            <p class="Textbody">Olivier Hallot</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="Heading4">Sources<a id="RefHeadingToc46493131930667"></a></p>
+    <p class="Textbody">The macros that make up the extension described
+      here are the result of consulting different sources which I name
+      in general terms since it is impossible for me to go into detail.
+      These are:</p>
+    <ul class="listlevel1List1">
+      <li>
+        <p class="List1">The documentation of the Basic language of the
+          different StarOffice derivatives.</p>
+      </li>
+      <li>
+        <p class="List1">The books: <span class="Emphasis">Aprendiendo
+            OooBasic</span> by Mauricio Baeza, <span class="Emphasis">OpenOffice.org
+            Macros Explained</span> by Andrew Pitonyak and <span
+            class="Emphasis">Programmation OpenOffice.org</span> by
+          Bernard Marcelly.</p>
+      </li>
+    </ul>
+    <p class="Textbody">As well as various consultations to the
+      OpenOffice and LibreOffice forums and the study of other macros in
+      the extensions for LibreOffice.</p>
+    <div id="SECDISPLAYAREAregion">
+      <h1 class="Heading1First" id="toc1"><a
+          id="RefHeadingToc13314256543436Copy1"></a>Introduction</h1>
+      <p class="Textbody">SanityCheck is a macro library for Writer that
+        is intended to help unify the formatting and styles of
+        LibreOffice chapters and guides.</p>
+      <p class="Textbody">Although some tasks can be performed with
+        Writer's own tools, macros attempt to centralize options that
+        are specific to the chapter format and automate some processes
+        that can be tedious and time-consuming.</p>
+      <p class="Textbody">As a safety rule, work on a copy of the file
+        you are going to review and make progressive copies of your
+        work.</p>
+      <p class="Textbody">Use macros preferably in chapters, before
+        assembling the guide, as it will be easier to correct formatting
+        errors and will reduce macro execution time.</p>
+      <h2 id="toc2"><a id="RefHeadingToc789925070040"></a>Installation
+        and features</h2>
+      <p class="BodyTextListIntro">Macros are packaged as an extension
+        and are installed like any other extension, from the extension
+        manager. Although it is unlikely that you have version 1.0.0 of
+        this extension, it is recommended that you uninstall it to avoid
+        problems.</p>
+      <ul class="listlevel1List1">
+        <li>
+          <p class="List1">The macros are written in LO Basic so they
+            should be compatible with any operating system without the
+            need to install any dependencies.</p>
+        </li>
+        <li>
+          <p class="List1">The extension adds a toolbar (<a
+              href="#seqrefFigure0">Figure 1</a>) as well as a menu
+            named <span class="StrongEmphasis">LO SanityCheck</span>
+            and the tools also appear integrated into the In <span
+              class="StrongEmphasis">Tabs user interface</span>.</p>
+        </li>
+      </ul>
+      <div class="frameFrame" id="framSanity000frame"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0">
+        <p class="Figure">Figure <a id="seqrefFigure0">1</a>:
+          SanityCheck toolbar</p>
+        <p class="Figure"><img alt="SanityCheck toolbar"
+            class="frameGraphics" id="imgSanity001graphic"
+            src="images/SanityCheck_EN-img002.png"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0;width:18.24567rem;height:4.1244097rem"></p>
+      </div>
+      <p class="Figure"></p>
+      <ul class="listlevel1List1">
+        <li>
+          <p class="List1">The macros are available in Spanish, English
+            and Portuguese, with the possibility of adding other
+            languages by adding translations to the <span class="Code">L10n</span>
+            module.</p>
+        </li>
+        <li>
+          <p class="List1">The extension incorporate templates with the
+            guides' own styles (also in the three languages to enable
+            spelling correction):</p>
+        </li>
+      </ul>
+      <p class="ListContents">Chapter template (for individual
+        chapters).</p>
+      <p class="ListContents">Master Document template (to assemble the
+        complete guide).</p>
+      <p class="ListContents">Back cover template (to attach to the end
+        of the complete guide).</p>
+      <ul class="listlevel1List1">
+        <li>
+          <p class="List1">Each dialog contains a built-in help page
+            that provides information on the tool's function, and after
+            running the macros a summary of the changes log is
+            displayed.</p>
+        </li>
+      </ul>
+      <h1 id="toc3"><a id="RefHeadingToc793925070040"></a>Macros
+        Description</h1>
+      <h2 id="toc4"><a id="RefHeadingToc14551026752438"></a>Toggle
+        highlights</h2>
+      <p class="Textbodyindent">The macro highlight or unhighlight guide
+        styles applied in the document to easily distinguish the styles
+        and check their correct application. It is especially useful for
+        checking if lists have direct formatting applied.</p>
+      <h2 id="toc5"><a id="RefHeadingToc14571026752438"></a>Document
+        fields (<a href="#seqrefFigure1">Figure 2</a>)</h2>
+      <p class="Textbodyindent">The macro opens a dialog where you
+        configure most of the document properties and custom fields used
+        in chapters.</p>
+      <div class="frameFrame" id="framSanity007frame"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0">
+        <p class="Figure">Figure <a id="seqrefFigure1">2</a>: Document
+          fields dialog box</p>
+        <p class="Figure"><img alt="Document fields dialog box"
+            class="frameGraphics" id="imgSanity002graphic"
+            src="images/SanityCheck_EN-img003.png"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0;width:21.096851rem;height:18.11575rem"></p>
+      </div>
+      <p class="Figure"></p>
+      <ul class="listlevel1HeadingNote">
+        <li>
+          <p class="HeadingNote">Note</p>
+        </li>
+      </ul>
+      <p class="BodyTextNote">The <span class="StrongEmphasis">Chapter
+          X</span> and <span class="StrongEmphasis">Title</span> fields
+        are new fields. These fields are used to set the Title document
+        property and also for the footer. Its use is recommended for the
+        chapter name on the first page.</p>
+      <h2 id="toc6"><a id="RefHeadingToc14591026752438"></a>Rename
+        Objects (<a href="#seqrefFigure2">Figure 3</a>)</h2>
+      <p class="Textbodyindent">This macro allows you to rename
+        sections, frames, table, images and the index with a standard
+        pattern for each object and consecutive numbering according to
+        the order of appearance in the document.</p>
+      <div class="frameFrame" id="framSanity001frame"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0">
+        <p class="Figure">Figure <a id="seqrefFigure2">3</a>: Rename
+          objects dialog box</p>
+        <p class="Figure"><img alt="Rename objects dialog box"
+            class="frameGraphics" id="imgSanity003graphic"
+            src="images/SanityCheck_EN-img004.png"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0;width:19.48819rem;height:9.590551rem"></p>
+      </div>
+      <p class="Figure"></p>
+      <h2 id="toc7"><a id="RefHeadingToc14611026752438"></a>Check styles
+        (<a href="#seqrefFigure3">Figure 4</a>)</h2>
+      <ul class="listlevel1List1">
+        <li>
+          <p class="List1">The macro check that the styles used in the
+            chapters follow the template standards to avoid styles alien
+            to the guides (generally styles from previous templates).</p>
+        </li>
+        <li>
+          <p class="List1">The macro go through the document and mark
+            the paragraphs with a style foreign to the documentation
+            with a comment and highlight the foreign character styles
+            with a black background and yellow font.</p>
+        </li>
+        <li>
+          <p class="List1">The macro replaces the paragraph styles prior
+            to the version 24 guides with their corresponding updated
+            ones, some with incorrect names (transition to the new
+            template) and the <span class="StrongEmphasis">MenuPath</span>
+            character style with <span class="StrongEmphasis">Strong
+              Emphasis</span> (remnants of old versions).</p>
+        </li>
+        <li>
+          <p class="List1">The macro allows the elimination of alien
+            styles when they are not applied to the document.</p>
+        </li>
+      </ul>
+      <div class="frameFrame" id="framSanity002frame"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0">
+        <p class="Figure">Figure <a id="seqrefFigure3">4</a>: Style
+          Check dialog box</p>
+        <p class="Figure"><img alt="Style Check dialog box"
+            class="frameGraphics" id="imgSanity004graphic"
+            src="images/SanityCheck_EN-img005.png"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0;width:29.459055rem;height:20.317324rem"></p>
+      </div>
+      <p class="Figure"></p>
+      <ul class="listlevel1HeadingNote">
+        <li>
+          <p class="HeadingNote">Note</p>
+        </li>
+      </ul>
+      <p class="BodyTextNote">Macros can't do everything. The reviewer's
+        job is to replace the styles outside the template with the
+        correct ones and eliminate them from the document</p>
+      <h2 id="toc8"><a id="RefHeadingToc14631026752438"></a>Direct
+        Format Cleanup (<a href="#seqrefFigure4">Figure 5</a>)</h2>
+      <div class="frameFrame" id="framSanity003frame"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0">
+        <p class="Figure">Figure <a id="seqrefFigure4">5</a>: Format
+          Cleaning dialog box</p>
+        <p class="Figure"><img alt="Format Cleaning dialog box"
+            class="frameGraphics" id="imgSanity005graphic"
+            src="images/SanityCheck_EN-img006.png"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0;width:21.000002rem;height:9.09685rem"></p>
+      </div>
+      <p class="Figure"></p>
+      <ul class="listlevel1List1">
+        <li>
+          <p class="List1"><span class="StrongEmphasis">Text:</span>
+            Clean up direct formatting applied to text fragments or
+            strings.</p>
+        </li>
+        <li>
+          <p class="List1"><span class="StrongEmphasis">Paragraphs</span>:
+            Eliminates direct formatting, including bullets or
+            numbering, applied to normal paragraphs and also cleans up
+            direct formatting of unordered lists.</p>
+        </li>
+        <li>
+          <p class="List1"><span class="StrongEmphasis">Numbered
+              Paragraphs</span>: In this case, the macro removes the
+            direct formatting applied to ordered lists and resets the
+            numbering whenever possible, adding a comment to paragraphs
+            where the numbering may need to be reset.</p>
+        </li>
+      </ul>
+      <ul class="listlevel1HeadingNote">
+        <li>
+          <p class="HeadingNote">Note</p>
+        </li>
+      </ul>
+      <p class="BodyTextNote">For the macro to correctly reset
+        numbering, every list must be preceded by the <span
+          class="StrongEmphasis">Body Text, List Intro</span> paragraph
+        style. In many cases the style before the lists is <span
+          class="StrongEmphasis">Body text</span>. The macro changes the
+        style of preceding paragraphs to <span class="StrongEmphasis">Body
+          Text, List Intro</span> style after a confirmation message.</p>
+      <h2 id="toc9"><a id="RefHeadingToc14651026752438"></a>Review of
+        tables (<a href="#seqrefFigure5">Figure 6</a>)</h2>
+      <p class="Textbodyindent">Using a dialog, this macro allows you to
+        go through the tables of the document and apply the <span
+          class="StrongEmphasis">LO User Guides</span> table style to
+        tables with data or optimize the spacing in the content
+        distribution tables. You can edit the document while it is open.</p>
+      <div class="frameFrame" id="framSanity004frame"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0">
+        <p class="Figure">Figure <a id="seqrefFigure5">6</a>: Tables
+          Review dialog box</p>
+        <p class="Figure"><img alt="Tables Review dialog box"
+            class="frameGraphics" id="imgSanity006graphic"
+            src="images/SanityCheck_EN-img007.png"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0;width:21.399214rem;height:13.299213rem"></p>
+      </div>
+      <p class="Figure"></p>
+      <h2 id="toc10"><a id="RefHeadingToc14671026752438"></a>Figures
+        adjust</h2>
+      <div class="frameFrame" id="framSanity005frame"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0">
+        <p class="Figure">Figure <a id="seqrefFigure6">7</a>: Images
+          Review Log dialog box</p>
+        <p class="Figure"><img alt="Images Review Log dialog box"
+            class="frameGraphics" id="imgSanity007graphic"
+            src="images/SanityCheck_EN-img008.png"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0;width:19.46693rem;height:13.842521rem"></p>
+      </div>
+      <p class="Figure"></p>
+      <p class="BodyTextListIntro">This macro has no initial dialog, it
+        runs with the optimal settings for the frames and images. From
+        the log dialog (<a href="#seqrefFigure6">Figure 7</a>) you can
+        access the <span class="StrongEmphasis">Browse Images</span>
+        macro.</p>
+      <ul class="listlevel1List1">
+        <li>
+          <p class="List1">The macro Applies the appropriate anchor and
+            formatting to images, the frames that contain them, and the
+            captions.</p>
+        </li>
+        <li>
+          <p class="List1">The macro Gets the caption text to apply to
+            the frame and image description.</p>
+        </li>
+        <li>
+          <p class="List1">The macro Insert comments in:</p>
+        </li>
+      </ul>
+      <p class="ListContents">Images whose aspect ratio is
+        disproportionate.</p>
+      <p class="ListContents">Images that have been cropped with Writer.</p>
+      <p class="ListContents">Poorly formed captions (possible errors in
+        the modification of an already inserted caption).</p>
+      <h2 id="toc11"><a id="RefHeadingToc14691026752438"></a>Browse
+        Images (<a href="#seqrefFigure7">Figure 8</a>)</h2>
+      <p class="Textbodyindent">As with tables, you can browse the
+        images through a dialog that shows information about the images
+        and you can edit the document and some properties of the images
+        and frames to correct errors. Please note that it does not
+        modify the caption of the frames, only their description.</p>
+      <div class="frameFrame" id="framSanity006frame"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0">
+        <p class="Figure">Figure <a id="seqrefFigure7">8</a>: Images
+          Review dialog box</p>
+        <p class="Figure"><img alt="Images Review dialog box"
+            class="frameGraphics" id="imgSanity008graphic"
+            src="images/SanityCheck_EN-img009.png"
+style="margin-left:0;margin-right:0;margin-top:0;margin-bottom:0;border:none;padding:0;width:22.892126rem;height:19.299213rem"></p>
+      </div>
+      <p class="Figure"></p>
+      <h1 id="toc12"><a id="RefHeadingToc1443925070040"></a>Limitations,
+        known issues and tips</h1>
+      <h2 id="toc13"><a id="RefHeadingToc2228925070040"></a>Templates</h2>
+      <p class="Textbody">Macros for checking styles and cleaning up
+        direct formatting are based directly on the styles of the
+        supplied templates.</p>
+      <p class="BodyTextListIntro">For macros to work correctly,
+        chapters must have the appropriate template applied using the <span
+          class="StrongEmphasis">Template Changer</span> extension or
+        styles must be imported from the template.</p>
+      <p class="DefinitionTerm"><span class="StrongEmphasis">Problem:</span></p>
+      <p class="Textbodyindent">The templates are copied to the macro
+        installation directory and are accessible to create new
+        documents, but is difficult to access it for the <span
+          class="StrongEmphasis">Template Changer</span> extension or
+        for the user themselves.</p>
+      <p class="DefinitionTerm">Solution:</p>
+      <ol class="listlevel1Numbering1">
+        <li>
+          <p class="Numbering1">Create a new document from the template.</p>
+        </li>
+        <li>
+          <p class="Numbering1">Save that document as a template.</p>
+        </li>
+        <li>
+          <p class="Numbering1">Import the created template to the user
+            templates directory if necessary.</p>
+        </li>
+      </ol>
+      <h2 id="toc14"><a id="RefHeadingToc2226925070040"></a>Fields</h2>
+      <p class="Textbody">The document property fields introduced in
+        version 24 such as Contributor, Editor, etc. are not accessible
+        (at the moment) by macros. If necessary, set these fields in the
+        Writer Document Properties dialog.</p>
+      <h2 id="toc15"><a id="RefHeadingToc2230925070040"></a>Styles</h2>
+      <p class="DefinitionTerm">Problems with Style Names:</p>
+      <p class="Textbodyindent">In some documents, due to the rush to
+        publish the new version, paragraph styles have been created with
+        names similar (but not the same) as they should be. This occurs
+        in some chapters of the Writer 24.2 guide. For example, instead
+        of <span class="StrongEmphasis">Body Text, List Intro</span>
+        has the <span class="StrongEmphasis">Body Text List Intro</span>
+        style applied (note that this name is without the comma)</p>
+      <p class="DefinitionTerm">Solution:</p>
+      <p class="Textbodyindent">The macro replaces some of those styles
+        with the correct ones, but it cannot handle all errors. Manually
+        correct the affected styles.</p>
+      <p class="DefinitionTerm">Problem with character styles:</p>
+      <p class="Textbodyindent">When clearing custom character styles,
+        Writer does not update their status, and they continue to appear
+        as applied even though they are not actually applied.</p>
+      <p class="DefinitionTerm">Solution:</p>
+      <p class="Textbodyindent">Once the document has been cleaned of a
+        character style, It must be saved and reloaded so that Writer
+        can update the style status and, since it is not in use, it can
+        be deleted.</p>
+      <h2 id="toc16"><a id="RefHeadingToc2232925070040"></a>Cleaning
+        direct formatting of Paragraphs</h2>
+      <p class="BodyTextListIntro">The macro cannot distinguish what
+        type of direct formatting has been applied to a paragraph, so it
+        eliminates all direct formatting: indentation, numbering,
+        spacing, etc.</p>
+      <p class="DefinitionTerm">Advice:</p>
+      <p class="Textbodyindent">Use the <span class="StrongEmphasis">Toggle
+          Highlight</span> macro before clearing direct formatting of
+        paragraphs for a visual check.</p>
+      <p class="Textbodyindent">A comparison with a pdf of the chapter
+        you are updating can be very helpful.</p>
+      <h2 id="toc17"><a id="RefHeadingToc2234925070040"></a>Cleaning
+        direct format of Numbers (ordered lists)</h2>
+      <p class="Textbody">The numbering sequence in ordered lists may be
+        interrupted by images, notices, notes or suggestions.</p>
+      <p class="BodyTextListIntro">When clearing the format, the
+        numbering sequence is lost and the numbering becomes continuous.
+        The macros try to reset the numbering but it is not easy to
+        distinguish where to reset them. Although the macro warns of
+        points where it could be restarted, The macro is not infallible.</p>
+      <p class="DefinitionTerm">Advice:</p>
+      <p class="Textbodyindent">Use the <span class="StrongEmphasis">Toggle
+          Highlight</span> macro before clearing direct paragraph
+        formatting for a visual check, and review the numbering after
+        running the macro.</p>
+      <h2 id="toc18"><a id="RefHeadingToc2236925070040"></a>Tables</h2>
+      <p class="Textbody">Custom table styles do not apply or function
+        like paragraph or character styles, so even if you apply the <span
+          class="StrongEmphasis">LO User Guides style</span>, you will
+        most likely need to adjust the table for page splitting, if
+        necessary and apply more appropriate formatting using Writer's
+        Table Properties dialog.</p>
+      <h2 id="toc19"><a id="RefHeadingToc2238925070040"></a>Images</h2>
+      <p class="BodyTextListIntro">In some cases, the macro inserts a
+        comment on images that is not understandable.</p>
+      <p class="DefinitionTerm">Problem:</p>
+      <p class="Textbodyindent">LibreOffice uses many decimals for the
+        aspect ratio of images, (it may use pixels) and macros use a
+        rule of three based on the dimensions of the images and
+        sometimes the operation performed by LibreOffice does not
+        coincide with that performed by the macros.</p>
+      <p class="DefinitionTerm">Solution:</p>
+      <p class="Textbodyindent">If there is a comment warning of a
+        scaling problem and the width and height percentage are the same
+        on the Crops page of the Image Properties dialog, try increasing
+        both or one of the percentages by one unit and you will not
+        receive the warning.</p>
+      <h2 id="toc20"><a id="RefHeadingToc2240925070040"></a>captions of
+        the figures</h2>
+      <p class="BodyTextListIntro">In some cases the macro inserts a
+        poorly formed caption comment that is not understandable.</p>
+      <p class="DefinitionTerm">Problem:</p>
+      <p class="Textbodyindent">The macro gets the text from the caption
+        and removes the “Figure” text based on the colon and space of
+        the sequence. When editing the caption directly there are times
+        when the space after the points is forgotten.</p>
+      <p class="DefinitionTerm">Solution:</p>
+      <p class="Textbodyindent">Review the caption.</p>
+      <p class="DefinitionTerm">Problem:</p>
+      <p class="Textbodyindent">In isolated cases the notice of poorly
+        formed caption can be found and the caption was well formed.
+        This may be due to strange formatting in the figure, for example
+        images with a frame inside the caption frame (nested frames).</p>
+      <p class="DefinitionTerm">Solution:</p>
+      <p class="Textbodyindent">Reconstruct the figure by copying just
+        the image and pasting it into another paragraph (be sure to copy
+        only the image) and insert a new caption.</p>
+      <h1 id="toc21"><a id="RefHeadingToc11891026752438"></a>About the
+        translation</h1>
+      <p class="Textbody">If you have read this far, you will have seen
+        many vocabulary and grammatical errors.</p>
+      <p class="Textbody">This document is translated from Spanish with
+        Google (some corrections made by me).</p>
+      <p class="Textbody">I'm sorry my English is so bad but I hope this
+        document was understandable.</p>
+    </div>
+  </body>
+</html>

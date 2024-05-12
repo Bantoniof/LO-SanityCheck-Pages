@@ -20,12 +20,56 @@ width:100%
 color:#000!important;background-color:#f1f1f1!important
 }
 
-body {
+
+html {
+font-family: -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", "DejaVu Sans", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif, FreeSerif, NanumGothic, "Noto Sans Tibetan", Taprom, 'Liberation Sans';
+}
+
+#SECLOGOregion img{
+height: 100%;
+width: 100%;
+object-fit:contain;
+}
+
+#SECGUIDEregion > p {
+margin-top:10px;
+padding:0px;
+font-size:1.6em;
+}
+
+#SECTOCregion {
+padding: 10px;
+overflow-y:auto;
+}
+
+#SECDISPLAYAREAregion {
+padding: 40px;
+overflow-y:auto;
+box-shadow: 0 2px 8px 0 rgba(0,0,0,.05);
+}
+
+#SECDISPLAYAREAregion img {
+border: 0px;
+transition:transform .2s; /* Animation */
+transition-property: border;
+box-shadow: 10px 10px 5px grey;
+}
+
+#SECDISPLAYAREAregion img:hover {
+transform: scale(1.3);
+background-color:white;
+}
+
+#SECDISPLAYAREAregion p{
+    font-size:1.15rem;
+}
+
+/*body {
 font-family : 'Liberation Sans', sans-serif;
-font-size : 1.0rem;/*max-width : 800px;*/
+font-size : 1.0rem;/*max-width : 800px;
 margin-left : auto;
 margin-right : auto;
-}
+}*/
 span.Emphasis {
 font-style : italic;
 background-color : transparent;
@@ -108,7 +152,7 @@ padding : 0;
 text-align : center;
 font-family : 'Liberation Sans', sans-serif;
 font-style : italic;
-font-size : 1.5rem;
+font-size : 1.2rem;
 color : #007c3c;
 }
 p.NewChapter {
@@ -126,7 +170,7 @@ font-size : 0.9166667rem;
 p.Title {
 margin-left : 0;
 margin-right : 0;
-margin-top : 20px;
+margin-top : 2rem;
 margin-bottom : 0;
 border : none;
 padding : 0;
@@ -134,7 +178,7 @@ text-align : center;
 font-family : 'Liberation Sans', sans-serif;
 font-style : italic;
 font-weight : normal;
-font-size : 2.6666667rem;
+font-size : 2rem;
 color : #000000;
 }
 p.Textbody {
@@ -247,7 +291,7 @@ font-size : 1.0rem;
 color : #000000;
 }
 h1 {
-margin-left : 1.3204725rem;
+margin-left : 0;/*1.3204725rem;*/
 margin-right : 0;
 margin-top : 1.2496063rem;
 margin-bottom : 0.496063rem;
@@ -256,10 +300,10 @@ border-bottom : 0.0825rem solid #007c3c;
 border-left : none;
 border-right : none;
 padding-top : 0;
-padding-bottom : 0.11574804rem;
+padding-bottom : 0;/*0.11574804rem;*/
 padding-left : 0;
 padding-right : 0;
-text-indent : -1.3204725rem;
+text-indent : 0; /*-1.3204725rem;*/
 font-family : 'Liberation Sans', sans-serif;
 font-weight : bold;
 font-size : 1.3333334rem;
@@ -267,7 +311,7 @@ color : #007c3c;
 clear : left;
 }
 h1.Heading1First {
-margin-left : 1.3204725rem;
+margin-left : 0;/*1.3204725rem;*/
 margin-right : 0;
 margin-top : 0;
 margin-bottom : 0.7535433rem;
@@ -276,11 +320,11 @@ border-bottom : 0.0825rem solid #007c3c;
 border-left : none;
 border-right : none;
 padding-top : 0;
-padding-bottom : 0.11574804rem;
+padding-bottom : 0;/*0.11574804rem;*/
 padding-left : 0;
 padding-right : 0;
 background-color : transparent;
-text-indent : -1.3204725rem;
+text-indent : 0;/*-1.3204725rem;*/
 font-family : 'Liberation Sans', sans-serif;
 font-weight : bold;
 font-size : 1.3333334rem;
@@ -372,4 +416,29 @@ margin-right : 0.47480318rem;
 margin-top : 0.47480318rem;
 margin-bottom : 0.47480318rem;
 font-size : 1.0rem;
+}
+p.TableHeading {
+margin-left:0.2503937rem;
+margin-right:0.2503937rem;
+margin-top:0.2503937rem;
+margin-bottom:0.2503937rem;
+border:none;
+padding:0;
+background-color:transparent
+;text-indent:0
+;text-align:left
+;font-style:italic
+;font-weight:bold;
+font-size:0.8333334rem
+}
+p.TableContents {
+margin-left:0.2503937rem;
+margin-right:0.2503937rem;
+margin-top:0.2503937rem;
+margin-bottom:0.2503937rem;
+border:none;
+padding:0;
+background-color:transparent
+;text-indent:0;
+font-size:0.8333334rem
 }

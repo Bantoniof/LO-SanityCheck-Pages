@@ -90,7 +90,6 @@ font-size:1.3rem;
 }
 
 #SECDISPLAYAREAregion p.Numbering1 {
-
   text-indent:-1.3rem;
 }
 
@@ -110,7 +109,7 @@ font-size:1.3rem;
   color:#a33f03
 }
 
- p.HeadingNote {
+#SECDISPLAYAREAregion p.HeadingNote {
   padding-top:0.3rem;
   color:#106803;
 }

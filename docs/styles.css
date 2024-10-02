@@ -1,46 +1,201 @@
-.w3-sidebar{
-height:100%;
-width:200px;
-background-color:#fff;
-position:fixed!important;
-z-index:1;
-overflow:auto;
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-.w3-responsive{
-display:block;
-overflow-x:auto;
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
-.w3-container{
-padding:0.01em 16px
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
 }
-.w3-bar-block{
-width:100%
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
 }
-.w3-light-grey{
-color:#000!important;background-color:#f1f1f1!important
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
 }
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+
 
 html {
 font-family: -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", "DejaVu Sans", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif, FreeSerif, NanumGothic, "Noto Sans Tibetan", Taprom, ;/*'Liberation Sans';*/
 }
 
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+}
+
+.w3-sidebar {
+  width: 25%;
+  height: 100dvh;
+  padding: 1rem;
+  position:fixed;
+  z-index:1;
+  overflow:auto;
+}
+
+#SECLOGOregion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2; 
+}
+#SECDISPLAYAREAregion {
+  padding: 40px;
+  overflow-y:auto;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4; 
+}
+
+
+
+
+.w3-container{
+padding:0.01em 16px
+}
+
+.w3-light-grey{
+  color:#000!important;
+  background-color:#f1f1f1;
+}
+
+
 #SECLOGOregion img{
 height: 100%;
 width: 100%;
+
 object-fit:contain;
 }
 
-#SECTOCregion {
-padding: 10px;
-overflow-y:auto;
-/*width: 25%;
-class: "w3-sidebar w3-light-grey w3-bar-block";*/
+summary {
+  display: block;
 }
 
-#SECDISPLAYAREAregion {
-padding: 40px;
-overflow-y:auto;
-box-shadow: 0 2px 8px 0 rgba(0,0,0,.05);
+details {
+  max-height: 2rem;
+  overflow: hidden;
+  transition: max-height 400ms ease-out;
+}
+
+label {
+  display: flex;
+  height: 2rem;
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+label::after {
+  content: "III";
+  rotate: 90deg;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  color: #007c3c;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  transition: rotate 200ms ease-out;
+}
+
+input {
+  display: none;
+}
+
+input:checked + details {
+   max-height: 800px;
+}
+
+input:checked + details label::after {
+  content: "X";
+  rotate: 0deg;
+  transition: rotate 200ms ease-out;
+}
+
+#TableofContents1 {
+  display: none;
+}
+
+#TableofContents2 {
+  display: block;
+}
+
+#TableofContents1 ul,
+#TableofContents2 ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#SECLOGOregion .NewChapter {
+  max-width: 30.708662rem;
+  max-height: 7.866142rem;
+}
+
+p.Figure {
+  display: flex;
+  justify-content: center;
 }
 
 #SECDISPLAYAREAregion img {
@@ -48,11 +203,11 @@ border: 0px;
 transition:transform .2s; /* Animation */
 transition-property: border;
 box-shadow: 10px 10px 5px grey;
+transition: transform .3s;
 }
 
 #SECDISPLAYAREAregion img:hover {
 transform: scale(1.3);
-background-color:white;
 }
 
 #SECDISPLAYAREAregion p{
@@ -63,14 +218,12 @@ background-color:white;
 text-align: center;
 font-size:2.4rem;
 margin-top:1rem;
-/*font-family:sans-serif;*/
 }
 
 #SECDISPLAYAREAregion p.Subtitle {
 text-align: center;
 font-size:1.2rem;
 margin-top:1rem;
-/*font-family:sans-serif;*/
 }
 
 #SECDISPLAYAREAregion h1 {
@@ -95,7 +248,7 @@ font-size:1.3rem;
 
 #SECDISPLAYAREAregion p.Numbering2 {
   text-indent:-1.3rem;
-}  
+}
 
 #SECDISPLAYAREAregion p.Numbering3 {
   text-indent:-1.2rem;}
@@ -117,4 +270,30 @@ font-size:1.3rem;
 #SECDISPLAYAREAregion p.HeadingTip {
   padding-top:0.3rem;
   color:#023f62
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #TableofContents1 {
+    display: block;
+  }
+  #TableofContents2 {
+    display: none;
+  }
+  .w3-sidebar {
+    position: static;
+    order: 2;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+  }
+  #SECLOGOregion {
+    order: 1;
+  }
+  #SECDISPLAYAREAregion {
+    order: 3;
+  }
 }

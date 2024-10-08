@@ -1,8 +1,5 @@
-
 /* Box sizing rules */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -14,14 +11,12 @@ html {
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
   margin-block-end: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role='list'], ol[role='list'] {
   list-style: none;
 }
 
@@ -32,27 +27,23 @@ body {
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
+h1, h2, h3, h4, button, input, label {
   line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
+h1, h2, h3, h4 {
   text-wrap: balance;
 }
 
 /* Make images easier to work with */
-img,
-picture {
+img, picture {
   max-width: 100%;
   display: block;
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input, button, textarea, select {
   font-family: inherit;
   font-size: inherit;
 }
@@ -62,10 +53,8 @@ textarea:not([rows]) {
   min-height: 10em;
 }
 
-
-
 html {
-font-family: -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", "DejaVu Sans", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif, FreeSerif, NanumGothic, "Noto Sans Tibetan", Taprom, ;/*'Liberation Sans';*/
+  font-family: -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", "DejaVu Sans", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif, FreeSerif, NanumGothic, "Noto Sans Tibetan", Taprom, ;/*'Liberation Sans';*/
 }
 
 body {
@@ -81,9 +70,9 @@ body {
   width: 25%;
   height: 100dvh;
   padding: 1rem;
-  position:fixed;
-  z-index:1;
-  overflow:auto;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
 }
 
 #SECLOGOregion {
@@ -94,35 +83,31 @@ body {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 2; 
+  grid-row-end: 2;
 }
+
 #SECDISPLAYAREAregion {
   padding: 40px;
-  overflow-y:auto;
+  overflow-y: auto;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
-  grid-row-end: 4; 
+  grid-row-end: 4;
 }
 
-
-
-
-.w3-container{
-padding:0.01em 16px
+.w3-container {
+  padding: 0.01em 16px
 }
 
-.w3-light-grey{
-  color:#000!important;
-  background-color:#f1f1f1;
+.w3-light-grey {
+  color: #000 !important;
+  background-color: #f1f1f1;
 }
 
-
-#SECLOGOregion img{
-height: 100%;
-width: 100%;
-
-object-fit:contain;
+#SECLOGOregion img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 summary {
@@ -162,7 +147,7 @@ input {
 }
 
 input:checked + details {
-   max-height: 800px;
+  max-height: 800px;
 }
 
 input:checked + details label::after {
@@ -179,14 +164,11 @@ input:checked + details label::after {
   display: block;
 }
 
-#TableofContents1 ul,
-#TableofContents2 ul {
+#TableofContents1 ul, #TableofContents2 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
-
 
 #SECLOGOregion .NewChapter {
   max-width: 30.708662rem;
@@ -199,90 +181,94 @@ p.Figure {
 }
 
 #SECDISPLAYAREAregion img {
-border: 0px;
-transition:transform .2s; /* Animation */
-transition-property: border;
-box-shadow: 10px 10px 5px grey;
-transition: transform .3s;
+  border: 0px;
+  transition: transform .2s; /* Animation */
+  transition-property: border;
+  box-shadow: 10px 10px 5px grey;
+  transition: transform .3s;
 }
 
 #SECDISPLAYAREAregion img:hover {
-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
-#SECDISPLAYAREAregion p{
-    font-size:1.15rem;
+#SECDISPLAYAREAregion p {
+  font-size: 1.15rem;
 }
 
 #SECDISPLAYAREAregion p.Title {
-text-align: center;
-font-size:2.4rem;
-margin-top:1rem;
+  text-align: center;
+  font-size: 2.4rem;
+  margin-top: 1rem;
 }
 
 #SECDISPLAYAREAregion p.Subtitle {
-text-align: center;
-font-size:1.2rem;
-margin-top:1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 #SECDISPLAYAREAregion h1 {
-font-size:1.5rem;
+  font-size: 1.5rem;
 }
 
 #SECDISPLAYAREAregion h2 {
-font-size:1.3rem;
+  font-size: 1.3rem;
 }
 
 #SECDISPLAYAREAregion p.List1 {
-  text-indent:-1rem;
+  text-indent: -1rem;
 }
 
 #SECDISPLAYAREAregion p.List2 {
-  text-indent:-1.2rem;
+  text-indent: -1.2rem;
 }
 
 #SECDISPLAYAREAregion p.Numbering1 {
-  text-indent:-1.3rem;
+  text-indent: -1.3rem;
 }
 
 #SECDISPLAYAREAregion p.Numbering2 {
-  text-indent:-1.3rem;
+  text-indent: -1.3rem;
 }
 
 #SECDISPLAYAREAregion p.Numbering3 {
-  text-indent:-1.2rem;}
+  text-indent: -1.2rem;
+}
 
 #SECDISPLAYAREAregion p.LegendNumbered {
-   text-indent:-1.7rem;
+  text-indent: -1.7rem;
 }
 
 #SECDISPLAYAREAregion p.HeadingCaution {
-  padding-top:0.3rem;
-  color:#a33f03
+  padding-top: 0.3rem;
+  color: #a33f03
 }
 
 #SECDISPLAYAREAregion p.HeadingNote {
-  padding-top:0.3rem;
-  color:#106803;
+  padding-top: 0.3rem;
+  color: #106803;
 }
 
 #SECDISPLAYAREAregion p.HeadingTip {
-  padding-top:0.3rem;
-  color:#023f62
+  padding-top: 0.3rem;
+  color: #023f62
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   .container {
     display: flex;
     flex-direction: column;
   }
+
   #TableofContents1 {
     display: block;
   }
+
   #TableofContents2 {
     display: none;
   }
+
   .w3-sidebar {
     position: static;
     order: 2;
@@ -290,10 +276,503 @@ font-size:1.3rem;
     height: auto;
     background-color: #fff;
   }
+
   #SECLOGOregion {
     order: 1;
   }
+
   #SECDISPLAYAREAregion {
     order: 3;
   }
+
+}
+
+/* tag style */
+
+body {
+  font-family: 'Liberation Sans', sans-serif;
+}
+span.Code {
+  font-family: 'DejaVu Sans Mono', monospace;
+  text-decoration: none;
+  letter-spacing: -0.04rem;
+  background-color: #eeeeee;
+  padding: .2rem 0 .2rem .4rem;
+  border-radius: .3rem;
+  box-shadow: .15rem .15rem .5rem grey;
+  margin-right: .2rem;
+}
+
+span.Emphasis {
+  font-style: italic;
+  background-color: transparent
+}
+
+span.StrongEmphasis {
+  font-weight: bold;
+  background-color: transparent
+}
+
+a:link {
+  color: #000080;
+  text-decoration: none
+}
+
+a:visited {
+  color: #800000;
+}
+
+p.DefinitionTerm {
+  margin-left: 1rem;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-indent: 0;
+  font-weight: bold;
+  font-size: 0.9rem
+}
+
+p.List1 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 0.9rem
+}
+
+p.ListContents {
+  margin-left: 3.0rem;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-indent: 0;
+  font-size: 0.9rem
+}
+
+p.Title {
+  margin-left: 2.7rem;
+  margin-right: 0;
+  margin-top: 8.3rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+  text-indent: -2.7rem;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 2.7rem;
+  color: #000000
+}
+
+p.Subtitle {
+  page-break-after: always;
+  margin-left: 1.5rem;
+  margin-right: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+  text-indent: -1.5rem;
+  text-align: left;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #007c3c
+}
+
+p.Textbodyindent {
+  margin-left: 3rem;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-indent: 0;
+  font-size: 0.9rem
+}
+
+p.Figure {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.9rem
+}
+
+p.Numbering1 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 0.9rem
+}
+
+p.TableContents {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-indent: 0;
+  font-size: 0.83rem;
+}
+
+p.Textbody {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 0.9rem
+}
+
+p.TableHeading {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-indent: 0;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 0.83rem;
+}
+
+p.Contents2 {
+  margin-left: 1.2rem;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: none;
+  padding: 0;
+  text-indent: 0;
+  font-size: 0.9rem
+}
+
+p.Contents1 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  border: none;
+  padding: 0;
+  text-indent: 0;
+  font-weight: bold;
+  font-size: 1.0rem
+}
+
+p.BodyTextListIntro {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-indent: 0;
+  font-size: 0.9rem
+}
+
+p.HeadingNote {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  padding: 0;
+  background-color: #d9f1dd;
+  font-weight: bold;
+  font-size: 1.0rem;
+  color: #000000
+}
+
+p.NewChapter {
+  page-break-before: always;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  text-align: center;
+  font-size: 0.9rem
+}
+
+p.BodyTextNote {
+  margin-left: 2.3rem;
+  margin-right: 2.3rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border-top: none;
+  border-bottom: 0.082rem solid #000000;
+  border-left: none;
+  border-right: none;
+  padding-top: 0;
+  padding-bottom: 0.12rem;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  text-indent: 0;
+  font-size: 0.9rem
+}
+
+p.HeadingTip {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  border: none;
+  padding: 0;
+  background-color: #cde5f7;
+  font-weight: bold;
+  font-size: 1.0rem;
+  color: #000000
+}
+
+p.Heading4 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  border: none;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #007c3c
+}
+
+h1 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  border-top: none;
+  border-bottom: 0.0825rem solid #007c3c;
+  border-left: none;
+  border-right: none;
+  padding-top: 0;
+  padding-bottom: 0.12rem;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: transparent;
+  text-indent: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #007c3c;
+  clear: left
+}
+
+h1.Heading1 {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-top: none;
+  border-bottom: 0.0825rem solid #007c3c;
+  border-left: none;
+  border-right: none;
+  padding-top: 0;
+  padding-bottom: 0.12rem;
+  padding-left: 0;
+  padding-right: 0;
+  text-indent: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #007c3c;
+  clear: left
+}
+
+h1.ContentsHeading {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border-top: none;
+  border-bottom: 0.0825rem solid #007c3c;
+  border-left: none;
+  border-right: none;
+  padding-top: 0;
+  padding-bottom: 0.12rem;
+  padding-left: 0;
+  padding-right: 0;
+  text-indent: 0;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #007c3c;
+  clear: left
+}
+
+h2 {
+  margin-left: 1rem;
+  margin-right: 0;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  padding: 0;
+  text-indent: -1rem;
+  font-weight: bold;
+  font-size: 1.17rem;
+  color: #007c3c;
+  clear: left
+}
+
+.Numbering1_1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 3rem;
+  counter-reset: Numbering1_1 0;
+  clear: left
+}
+
+.Numbering1_1 > li::marker {
+  content: ''
+}
+
+.Numbering1_1 > li > p:first-of-type {
+  text-indent: 0
+}
+
+.Numbering1_1 > li > p {
+  margin-left: 0
+}
+
+.Numbering1_1 > li > p:first-of-type::before {
+  counter-increment: Numbering1_1;
+  content: counter(Numbering1_1, decimal) ') '
+}
+
+.List1_1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 3rem;
+  clear: left
+}
+
+.List1_1 > li::marker {
+  content: ''
+}
+
+.List1_1 > li > p:first-of-type {
+  text-indent: -0.71rem;
+}
+
+.List1_1 > li > p {
+  margin-left: 0
+}
+
+.List1_1 > li > p:first-of-type::before {
+  content: '• ';
+  font-family: OpenSymbol
+}
+
+.HeadingNote_1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  clear: left
+}
+
+.HeadingNote_1 > li::marker {
+  content: ''
+}
+
+.HeadingNote_1 > li > p:first-of-type {
+  text-indent: 0
+}
+
+.HeadingNote_1 > li > p {
+  margin-left: 0
+}
+
+.HeadingNote_1 > li > p:first-of-type::before {
+  content: url(SanityCheck_PT-img/SanityCheck_PT-img012.svg) ' '
+}
+
+.HeadingTip_1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  clear: left
+}
+
+.HeadingTip_1 > li::marker {
+  content: ''
+}
+
+.HeadingTip_1 > li > p:first-of-type {
+  text-indent: 0
+}
+
+.HeadingTip_1 > li > p {
+  margin-left: 0
+}
+
+.HeadingTip_1 > li > p:first-of-type::before {
+  content: url(SanityCheck_PT-img/SanityCheck_PT-img013.svg) ' '
+}
+
+.frameGraphics {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 1.0rem
+}
+
+.frameFrame {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #000000;
+  padding: 0.35rem;
+  background-color: transparent;
+  font-size: 1.0rem
+}
+
+.frameGraphics p {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.0rem
+}
+
+.frameFrame p {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.0rem
 }

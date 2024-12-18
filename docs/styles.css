@@ -73,48 +73,64 @@ margin-top:1rem;
 /*font-family:sans-serif;*/
 }
 
+
 #SECDISPLAYAREAregion h1 {
+font-size:1.6rem;
+}
+#SECDISPLAYAREAregion h1.Heading1First {
+font-size:1.6rem;
+}
+#SECDISPLAYAREAregion h2 {
 font-size:1.5rem;
 }
-
-#SECDISPLAYAREAregion h2 {
-font-size:1.3rem;
+#SECDISPLAYAREAregion h3 {
+font-size:1.25rem;
+}
+#SECDISPLAYAREAregion h4 {
+font-size:1.25rem;
+}
+#SECDISPLAYAREAregion p.TableContents {
+font-size:1rem;
+}
+#SECDISPLAYAREAregion p.TableHeading {
+font-size:1rem;
+}
+#SECDISPLAYAREAregion p.Code {
+font-size:0.95rem;
 }
 
+/*Listas*/
+#SECDISPLAYAREAregion p.LegendNumbered {
+font-size:1rem;
+text-indent:-1.7rem;
+}
 #SECDISPLAYAREAregion p.List1 {
   text-indent:-1rem;
 }
-
 #SECDISPLAYAREAregion p.List2 {
   text-indent:-1.2rem;
 }
-
 #SECDISPLAYAREAregion p.Numbering1 {
   text-indent:-1.3rem;
 }
-
 #SECDISPLAYAREAregion p.Numbering2 {
   text-indent:-1.3rem;
-}  
-
-#SECDISPLAYAREAregion p.Numbering3 {
-  text-indent:-1.2rem;}
-
-#SECDISPLAYAREAregion p.LegendNumbered {
-   text-indent:-1.7rem;
 }
-
+#SECDISPLAYAREAregion p.Numbering3 {
+  text-indent:-1.2rem;
+}
 #SECDISPLAYAREAregion p.HeadingCaution {
+  font-size:1.25rem;
   padding-top:0.3rem;
   color:#a33f03
 }
-
-#SECDISPLAYAREAregion p.HeadingNote {
+#SECDISPLAYAREAregion  p.HeadingNote {
+  font-size:1.25rem;
   padding-top:0.3rem;
   color:#106803;
 }
-
 #SECDISPLAYAREAregion p.HeadingTip {
+  font-size:1.25rem;
   padding-top:0.3rem;
   color:#023f62
 }
